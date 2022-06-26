@@ -1,3 +1,18 @@
+*, *::after, *::before {
+	box-sizing: border-box;;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.15;
+}
+
+
 .App {
 	padding: 2rem;
 }
