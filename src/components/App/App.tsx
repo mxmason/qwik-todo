@@ -1,6 +1,6 @@
-import { useStore, component$, Host } from '@builder.io/qwik';
+import { useStore, component$, Host, useStyles$ } from '@builder.io/qwik';
 
-import './App.css';
+import styles from './App.css?inline';
 
 type Item = {
 	id: string;
@@ -27,6 +27,7 @@ export const data: Item[] = [
 ];
 
 export const App = component$(() => {
+	useStyles$(styles);
 	const state = useStore({ data: data, name: '' });
 
 	return (
